@@ -44,19 +44,17 @@
 
                 <h3>How to use?</h3>
                 <p>For a simple "time since" use the directive like this</p>
-                <pre><code>&lt;p tuna="12/02/2014"&gt;since {{years}} Years&lt;/p&gt;</code></pre>
+                <pre><code>&lt;p tuna="12/02/2014"&gt;since &#123;&#123;years&#125;&#125; Years&lt;/p&gt;</code></pre>
                 <p>If you want a more accurate output, use it like this</p>
-                <pre><code>&lt;p tuna="12/02/2014 23:45"&gt;since {{years}} Years and {{minutes}} Minutes&lt;/p&gt;</code></pre>
+                <pre><code>&lt;p tuna="12/02/2014 23:45"&gt;since &#123;&#123;years&#125;&#125; Years and &#123;&#123;minutes&#125;&#125; Minutes&lt;/p&gt;</code></pre>
 
                 
                 
                 <h3>How does it work?</h3>
 
-                <p>
-                    Pretty simple, it just passes the Input Parameter of the tuna attribute to the <code>new Date()</code> Constructor.<br>
-                    This Constructor returns a Date Object which returns a Javascript timestamp with the <code>getTime()</code> Method.<br>
-                    Using the timedifference between now and this timestamp, we can then calculate the times past.
-                </p>
+                <p>Pretty simple, it just passes the Input Parameter of the tuna attribute to the <code>new Date()</code> Constructor.</p>
+                <p>This Constructor returns a Date Object which returns a Javascript timestamp with the <code>getTime()</code> Method.</p>
+                <p>Using the timedifference between now and this timestamp, we can then calculate the times past.</p>
 
             </section>
         </div>
