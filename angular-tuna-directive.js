@@ -21,11 +21,10 @@ angular.module('angular-tuna-directive', [])
             function(preCalcs, $interpolate) {
                 return {
                     compile: function(a, b) {
-                        var setDate = new Date(b.tuna || '');
                         var retTimes = {years: 0, months: 0, days: 0, hours: 0, minutes: 0};//We can show zeros as default
                         //--------------------------------------------------------
                         //Here come the calculation for the past time
-                        var timeDiff = new Date().getTime() - setDate.getTime();
+                        var timeDiff = (new Date().getTime()) - (new Date(b.tuna || '').getTime());//get the difference between now and then
                         retTimes.years = Math.floor(timeDiff / preCalcs[0]);
                         var cacheCalcA = timeDiff - retTimes.years * preCalcs[0];//I know, the calculations are simple, but i want to cache them, because they are used multiple times
                         retTimes.months = Math.floor((timeDiff - retTimes.years * preCalcs[0]) / preCalcs[0]);
