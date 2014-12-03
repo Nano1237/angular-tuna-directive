@@ -44,9 +44,9 @@
 
                 <h3>How to use?</h3>
                 <p>For a simple "time since" use the directive like this</p>
-                <pre><code>&lt;p tuna="12/02/2014"&gt;since &#123;&#123;years&#125;&#125; Years&lt;/p&gt;</code></pre>
+                <pre ng-non-bindable><code>&lt;p tuna="12/02/2014"&gt;since {{years}} Years&lt;/p&gt;</code></pre>
                 <p>If you want a more accurate output, use it like this</p>
-                <pre><code>&lt;p tuna="12/02/2014 23:45"&gt;since &#123;&#123;years&#125;&#125; Years and &#123;&#123;minutes&#125;&#125; Minutes&lt;/p&gt;</code></pre>
+                <pre ng-non-bindable><code>&lt;p tuna="12/02/2014 23:45"&gt;since {{years}} Years and {{minutes}} Minutes&lt;/p&gt;</code></pre>
 
                 
                 
