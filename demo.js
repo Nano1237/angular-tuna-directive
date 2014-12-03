@@ -1,1 +1,0 @@
-angular.module('demo',['angular-tuna-directive']);
