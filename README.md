@@ -1,6 +1,6 @@
 # angular-tuna-directive
 
-![Tuna](https://raw.github.com/Nano1237/angular-tuna-directive/master/img/tuna.png)
+![Tuna](https://raw.githubusercontent.com/Nano1237/angular-age-directive/master/img/tuna.png)
 
 #### Why is it called Tuna?
 
