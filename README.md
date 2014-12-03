@@ -1,9 +1,11 @@
 # angular-tuna-directive
 
+![Tuna](https://raw.github.com/Nano1237/angular-tuna-directive/master/img/tuna.png)
+
 #### Why is it called Tuna?
 
-I thaught about a abbreviation of "Time until Now" and found TUNA!
-Now it is called tuna ... 
+I thought about a abbreviation of "Time until Now" and found TUNA!
+And yes ... Now it is called tuna ... 
 
 #### Demo:
 
