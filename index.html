@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
     <head>
         <meta charset='utf-8'>
         <meta http-equiv="X-UA-Compatible" content="chrome=1">
@@ -10,10 +9,8 @@
         <script src="https://raw.githubusercontent.com/Nano1237/angular-tuna-directive/master/angular-tuna-directive.min.js"></script>
         <script src="javascripts/main.js"></script>
         <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
-
         <title>Angular-tuna-directive Demo</title>
     </head>
-
     <body ng-app="demo">
 
         <!-- HEADER -->
@@ -48,14 +45,15 @@
                 <p>If you want a more accurate output, use it like this</p>
                 <pre ng-non-bindable><code>&lt;p tuna="12/02/2014 23:45"&gt;since {{years}} Years and {{minutes}} Minutes&lt;/p&gt;</code></pre>
 
-                
-                
                 <h3>How does it work?</h3>
-
                 <p>Pretty simple, it just passes the Input Parameter of the tuna attribute to the <code>new Date()</code> Constructor.</p>
                 <p>This Constructor returns a Date Object which returns a Javascript timestamp with the <code>getTime()</code> Method.</p>
-                <p>Using the timedifference between now and this timestamp, we can then calculate the times past.</p>
+                <p>Using the timedifference between now and this timestamp, we can then calculate the time past.</p>
+                <p>After everything is done, we interpolate the calculatet times into the elements content.</p>
 
+                
+                <h3>Is the development over?</h3>
+                <p>No! When I have time , I will develop a real-time directive for the tuna.</p>
             </section>
         </div>
 
