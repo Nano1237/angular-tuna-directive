@@ -51,7 +51,7 @@ General
 
 #### Quick use:
 
-```
+```html
 <p ng-age='05/21/1990'>{{years}}</p>
 <p ng-age='10/08/1991 17:39'>{{days}}</p>
 ```
